@@ -13,7 +13,7 @@ WHERE id = $1 LIMIT 1;
 
 -- name: ListAccounts :many
 SELECT * FROM accounts
-ORDER BY name;
+ORDER BY owner;
 
 -- name: UpdateAccount :one
 UPDATE accounts SET balance = $2
