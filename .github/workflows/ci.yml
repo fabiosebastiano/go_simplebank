@@ -21,6 +21,8 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+        ports:
+          - 5432:5432
 
     steps:
 
@@ -34,7 +36,7 @@ jobs:
        curl -L https://github.com/golang-migrate/migrate/releases/download/v4.15.1/migrate.linux-amd64.tar.gz | tar xvz
        sudo mv migrate /usr/bin/
        which migrate
-       
+
     - name: Checking out code
       uses: actions/checkout@v2
 
