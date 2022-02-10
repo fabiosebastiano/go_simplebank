@@ -6,12 +6,12 @@ import (
 )
 
 type Server struct {
-	store  *db.Store
+	store  db.Store
 	router *gin.Engine
 }
 
 //NewServer crea un nuovo server HTTP e prepara il routing
-func NewServer(store *db.Store) *Server {
+func NewServer(store db.Store) *Server {
 	server := &Server{store: store}
 	router := gin.Default()
 

@@ -16,7 +16,6 @@ func main() {
 
 	if err != nil {
 		log.Fatal("Cannot read the config file ", err)
-
 	}
 
 	//istanzio DB da passare
