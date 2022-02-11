@@ -45,3 +45,18 @@ func RandomCurrency() string {
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
 }
+
+//RandomUsername
+func RandomUsername() string {
+	return RandomString(10)
+}
+
+//RandomFullname
+func RandomFullname() string {
+	return RandomString(5) + " " + RandomString(10)
+}
+
+//RandomEmail
+func RandomEmail() string {
+	return RandomString(10) + "@" + RandomString(7) + "." + RandomString(2)
+}
