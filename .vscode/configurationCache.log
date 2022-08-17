@@ -1,0 +1,1 @@
+{"buildTargets":[".PHONY","createdb","dropdb","make","migratedown","migratedown1","migratedown2","migrateup","migrateup1","mock","postgres","server","sqlc","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
