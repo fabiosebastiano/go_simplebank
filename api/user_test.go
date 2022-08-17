@@ -3,20 +3,15 @@ package api
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"testing"
 
-	mockdb "github.com/fabiosebastiano/simplebank/db/mock"
 	db "github.com/fabiosebastiano/simplebank/db/sqlc"
 	"github.com/fabiosebastiano/simplebank/util"
-	"github.com/gin-gonic/gin"
-	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 )
 
+/*
 func TestCreateUserAPI(t *testing.T) {
 	user, password := createRandomUser(t)
 
@@ -86,6 +81,7 @@ func TestCreateUserAPI(t *testing.T) {
 
 	}
 }
+*/
 
 func createRandomUser(t *testing.T) (user db.User, password string) {
 	password = util.RandomString(6)
